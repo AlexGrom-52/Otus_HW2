@@ -1,0 +1,56 @@
+{
+  "name": "otus_hw2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "lint": "eslint . --ext .js,.ts && tsc --noEmit && prettier --check .",
+    "lint:fix": "eslint . --fix --ext .js,.ts && prettier --write .",
+    "prepare": "husky install",
+    "build": "webpack --node-env production",
+    "dev": "webpack server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexGrom-52/Otus_HW2.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AlexGrom-52/Otus_HW2/issues"
+  },
+  "homepage": "https://github.com/AlexGrom-52/Otus_HW2#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.15.7",
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.6",
+    "@babel/preset-typescript": "^7.15.0",
+    "@types/jest": "^27.0.2",
+    "@typescript-eslint/eslint-plugin": "^4.31.2",
+    "@typescript-eslint/parser": "^4.31.2",
+    "babel-loader": "^8.2.2",
+    "css-loader": "^6.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^24.4.2",
+    "html-loader": "^2.1.2",
+    "html-webpack-plugin": "^5.3.2",
+    "husky": "^7.0.2",
+    "jest": "^27.2.2",
+    "lint-staged": "^11.1.2",
+    "prettier": "2.4.1",
+    "style-loader": "^3.3.0",
+    "typescript": "^4.4.3",
+    "webpack": "^5.54.0",
+    "webpack-cli": "^4.8.0",
+    "webpack-dev-server": "^4.3.0"
+  },
+  "lint-staged": {
+    "*.js": "eslint --cache --fix --ext .js,.ts",
+    "*.{js,css,md,json,yml,html}": "prettier --write"
+  },
+  "dependencies": {}
+}
