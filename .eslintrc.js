@@ -15,7 +15,7 @@ module.exports = {
     ecmaVersion: 12,
     sourceType: "module",
   },
-  plugins:["jest"], 
+  plugins: ["jest", "@typescript-eslint"],
   rules: {
     "max-len": [
       "error",
@@ -30,7 +30,6 @@ module.exports = {
     "no-restricted-globals": "off",
     "no-plusplus": "off",
     "import/no-unresolved": "off",
-    "import/extensions": ["warn", "never"] ,
+    "import/extensions": ["warn", "never"],
   },
-  plugins: ["@typescript-eslint"],
 };
